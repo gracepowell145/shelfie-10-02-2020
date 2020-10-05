@@ -5,5 +5,9 @@ price INTEGER,
 imgurl TEXT
 );
 
--- INSERT INTO product (name, price, imgurl)
--- VALUES ('Tenet', 'asd;lkfalskdjf;asdflasdf', 2020);
+INSERT INTO products 
+(name, price, imgurl)
+VALUES 
+('apple', 100, 'sdahflds');
+
+SELECT * FROM products;
