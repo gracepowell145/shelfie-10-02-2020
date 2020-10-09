@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import Form from './Components/Form'
 import './App.css';
 import Dashboard from './Components/Dashboard'
+import axios from 'axios';
 
 export default class App extends Component{
   constructor(){
@@ -12,7 +13,14 @@ export default class App extends Component{
       inventory:[]
     }
   }
-
+componentDidMount(){
+  axios.get()
+  .then((res) =>
+  this.setState({
+    inventory:[{}]
+  }))
+  .catch(err => console.log(err))
+}
   //Methods: get inventory from dataBase
 
 render(){

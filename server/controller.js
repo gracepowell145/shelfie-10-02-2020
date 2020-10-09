@@ -8,16 +8,16 @@ db.get_all_products().then((dbRes) => {
   .catch(err => console.log.log(err))
 }, 
 
-getProductById: (req, res) => {
-    const { id } = req.params
-    const db = req.app.get('db')
+// getProductById: (req, res) => {
+//     const { id } = req.params
+//     const db = req.app.get('db')
 
-    db.get_product_by_id({id})
-    .then((product) => {
-      res.status(200).send(product)
-    })
-    .catch(err => console.log(err));
-  },
+//     db.get_product_by_id({id})
+//     .then((product) => {
+//       res.status(200).send(product)
+//     })
+//     .catch(err => console.log(err));
+//   },
 
   addProduct: (req, res) => {
       const db= req.app.get('db')
@@ -28,7 +28,6 @@ getProductById: (req, res) => {
       })
       .catch(err=> console.log(err));
   }
-
 
 
 }

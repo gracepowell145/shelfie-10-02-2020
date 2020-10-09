@@ -5,9 +5,9 @@ price INTEGER,
 imgurl TEXT
 );
 
-INSERT INTO products 
+INSERT INTO products
 (name, price, imgurl)
 VALUES 
 ('apple', 100, 'sdahflds');
 
-SELECT * FROM products;
+SELECT * FROM product;
